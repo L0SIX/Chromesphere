@@ -56,10 +56,9 @@ Tab:AddButton({
   	end    
 })
 
-
 -- Make Tab "Movement"
 local Tab = Window:MakeTab({
-	Name = "Tab 1",
+	Name = "Movement",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
