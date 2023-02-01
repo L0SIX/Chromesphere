@@ -1,0 +1,46 @@
+-- Load Ui
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+-- Make Window
+local Window = OrionLib:MakeWindow({Name = "Chromesphere", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+-- Notify User Of UI
+OrionLib:MakeNotification({
+	Name = "Loaded!",
+	Content = "Made by losix#7795",
+	Image = "rbxassetid://4483345998",
+	Time = 8
+})
+
+
+-- Make Tab "Aim"
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Add Section "Blatant (Legit When Paired."
+local Section = Tab:AddSection({
+	Name = "Blatant (Legit when paired)"
+})
+--Add Camlock And Silent Aim as buttons.
+Tab:AddButton({
+	Name = "Silent Aim (Q)",
+	Callback = loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/op%20silent')))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Smooth Camlock (E)",
+	Callback = 
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/Tenaki%20Camlock')))()
+  	end    
+})
+-- Add Section "Legit"
+local Section = Tab:AddSection({
+	Name = "Legit/Streamable"
+})
+Tab:AddButton({
+	Name = "Streamable Silent Aim",
+	Callback = 
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/Tenaki%20Camlock')))()
+  	end    
+})
