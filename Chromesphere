@@ -10,20 +10,28 @@ OrionLib:MakeNotification({
 	Time = 8
 })
 
-
 -- Make Tab "Aim"
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 -- Add Section "Blatant (Legit When Paired.)"
 local Section = Tab:AddSection({
 	Name = "Blatant (Legit View When Paired With Camlock)"
 })
+
 --Add Camlock And Silent Aim as buttons.
 Tab:AddButton({
 	Name = "OP Silent Aim (Reccomended) (Q)",
+	Callback = loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/op%20silent')))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Smooth Streamable Camlock (E)",
 	Callback = loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/op%20silent')))()
       		print("button pressed")
   	end    
@@ -43,7 +51,7 @@ Tab:AddButton({
 
 })
 Tab:AddButton({
-	Name = "Camlock (E)",
+	Name = "Normal Camlock (E)",
 	Callback = 
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/L0SIX/silent-aim-cam-macro/main/Camlock%20Straight')))()
   	end    
